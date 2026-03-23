@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>POS Demo</title>
+</head>
+<body>
+  <h1>Simple POS Demo</h1>
+
+  <input id="price" placeholder="Enter price">
+  <input id="qty" placeholder="Enter quantity">
+
+  <button onclick="calculate()">Calculate Total</button>
+
+  <h2 id="result"></h2>
+
+  <script>
+    function calculate() {
+      let price = document.getElementById("price").value;
+      let qty = document.getElementById("qty").value;
+
+      let total = price * qty;
+
+      document.getElementById("result").innerText = "Total: ₹ " + total;
+    }
+  </script>
+</body>
+</html>
